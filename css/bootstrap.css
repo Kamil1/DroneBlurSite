@@ -4214,7 +4214,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4325,6 +4324,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  padding: 0px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4637,8 +4637,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #414141;
+  border-bottom: 3px solid white;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -6803,6 +6803,7 @@ button.close {
   background-image:url("../resources/masthead.jpg");
   background-repeat:no-repeat;
   max-width: 100%;
+  margin-top: 50px;
 }
 
 #header-logo {
@@ -6832,15 +6833,7 @@ button.close {
 
 #header-border {
   border-right: 4px solid white;
-}
-
-@media (max-width:992px) {
-  #header-border {
-    border-right:none;
-  }
-  .masthead {
-    height: 720px;
-  }
+  height: 400px;
 }
 
 #header-vid {
@@ -6864,13 +6857,46 @@ button.close {
 .blog-title {
   font-size: 48px;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .blog-img {
   width:100%;
   margin-top:20px;
   margin-bottom:20px; 
+}
+
+.tweet {
+  margin-top:40px;
+}
+
+@media (max-width:992px) {
+  #header-border {
+    border-right:none;
+    height:100%;
+  }
+  .masthead {
+    height: 720px;
+  }
+}
+
+@media (max-width:768px) {
+  .tweet {
+    margin-top:0px;
+    margin-bottom: 20px;
+  }
+}
+
+.nav-logo {
+  height: 100%;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+#nav-name {
+  font-family: blackout;
+  color: white;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

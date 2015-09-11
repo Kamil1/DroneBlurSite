@@ -12,6 +12,53 @@
 
   </head>
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+        appId      : '1689430527943357',
+        xfbml      : true,
+        version    : 'v2.4'
+      });
+    };
+
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));
+    </script>
+  
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+ 
+      t._e = [];
+      t.ready = function(f) {
+      t._e.push(f);
+    };
+
+  return t;
+  } (document, "script", "twitter-wjs"));
+    </script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" id="nav-name" href="#">
+            <span>
+              <img class="nav-logo" src="resources/nav-logo.png">DroneBlur.com
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
   	<div class="masthead">
   		<div class="row">
   			<div class="col-lg-3 col-lg-offset-1 col-md-5" id="header-border" >
@@ -37,13 +84,26 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <h1 class="blog-title">Blog Post</h1>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <h1 class="blog-title">Blog Post<br>
+              <small class="author">Written by Kamil Khan</small>
+            </h1>
+          </div>
+          <div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 tweet">
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> Tweet</a><br>
+            <div class="fb-share-button"></div>
+          </div>
+        </div>
         <p>Lorem ipsum dolor sit amet, orci suspendisse consectetuer iaculis donec, purus urna semper wisi, pede commodo, ut in lacus luctus adipiscing, orci duis ut elit. Vestibulum erat sed pulvinar, nec magna leo aliquam facilisi nonummy, lorem et magna nullam, sem nulla convallis, placerat mauris duis. Et ipsum viverra wisi curabitur ac ante. Sit velit sem in urna penatibus morbi, amet egestas enim nullam non id lacus, tellus ut tempor neque proin scelerisque consequat. Risus semper elit justo, quis elit vestibulum per nam lobortis, libero a, eget ut mauris dapibus wisi tristique amet. Sed hymenaeos. Sem amet, donec odio nam integer interdum erat habitasse, vel aliquam vel, vehicula in amet in egestas ipsum egestas, adipiscing praesent consequat. Felis eget, consectetuer sapien dictum rutrum.<br>
-        <center><img class="img-responsive blog-img" src="http://placehold.it/350x150"></center>
+        <center><img class="img-responsive blog-img" src="resources/blog1img.jpg"></center>
         Quam sit, a natoque ante lectus vestibulum ut facilisi, nonummy maecenas netus vel. Laoreet risus amet erat, mi vestibulum nulla. Aliquet vel non vestibulum sed at orci. Porta nec dapibus aliquam arcu, tellus non tincidunt nulla lacus vitae pharetra, vel bibendum ornare ac est pellentesque justo, purus tempor dignissim pellentesque arcu massa. Sem quo eleifend eget cursus quis, penatibus posuere morbi eget tortor eget, laoreet hymenaeos. Tristique quam rutrum mi sed cras ac. Gravida mollis at curabitur laoreet.<br>
         Eu placerat a volutpat, interdum id vulputate, tincidunt augue erat vestibulum vitae aliquam wisi. Elit habitasse, proin quis, pede non vitae nullam fermentum accumsan sit, laoreet wisi id, tellus et egestas integer eu libero wisi. Imperdiet quis vestibulum proin, tristique tincidunt sapien, accumsan erat semper. Id vehicula facilisi vestibulum ipsum. Urna nullam adipiscing faucibus, adipiscing pharetra libero orci nec, justo justo mi hendrerit, vestibulum vitae class ipsum, amet quam et tincidunt in vestibulum. Rhoncus nec ante, pellentesque et nec libero, nam massa in donec, sed litora velit fusce turpis molestie, tellus wisi sed nullam curabitur et nec. Vitae feugiat et imperdiet felis mattis. Vehicula tellus nibh at cras eros non, nibh mauris magna nulla eros, pellentesque praesent. Iaculis suspendisse ullamcorper molestie feugiat, et ullamcorper pulvinar est, amet taciti proin, libero turpis augue orci, a integer quis vitae vel integer. Nibh inceptos, eget arcu blandit lectus amet diam. Tellus vivamus morbi tempor dolor a nisl.<br>
         Magna vivamus accumsan quam, nascetur ut felis velit dui, duis libero, amet sed pulvinar sollicitudin, amet mattis lacus pellentesque a odio. Tincidunt praesent, ante eget quis sapien consectetuer elit. Metus quis vehicula pellentesque ac aliquam hac, dictum nec integer. Vestibulum a elementum amet quisque in magna, donec eget integer ad sed eget euismod, perferendis erat, vel phasellus ut eros, massa urna a accumsan sed. Sit varius wisi ut metus hymenaeos. Auctor turpis. Lectus donec.
       </p>
+    </div>
+  </div>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
