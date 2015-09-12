@@ -6829,6 +6829,8 @@ button.close {
 #header-title {
   font-family: blackout;
   color:white;
+  margin-block-start: 0px;
+  margin-block-end:0px;
 }
 
 #header-border {
@@ -6844,6 +6846,8 @@ button.close {
   position: absolute;
   top: 0%;
   left: 0%;
+  padding: 0px;
+  margin: 0px;
   width: 100%;
   height: 360px;
 }
