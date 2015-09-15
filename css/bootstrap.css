@@ -10,7 +10,10 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 60px;
 }
 article,
 aside,
@@ -6901,6 +6904,21 @@ button.close {
 #nav-name {
   font-family: blackout;
   color: white;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
