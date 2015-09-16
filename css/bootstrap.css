@@ -6880,6 +6880,7 @@ button.close {
 @media (max-width:992px) {
   #header-border {
     border-right:none;
+    border-right:0;
     height:100%;
   }
   .masthead {
